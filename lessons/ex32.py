@@ -5,7 +5,7 @@ change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
 
 # this first kind of for-loop goes through a list
 for number in the_count:
-	print "This is count % d" % number
+	print "This is count %d" % number
 
 # same as above
 for fruit in fruits:
@@ -27,7 +27,7 @@ for i in range(0,6):
 
 # now we cna print them out too
 for i in elements:
-	print "Element was: %d" i
+	print "Element was: %d" % i
 
 
 
