@@ -8,7 +8,7 @@ for number in the_count:
 	print "This is count % d" % number
 
 # same as above
-for fruit in fruits
+for fruit in fruits:
 	print "A fruit of type: %s" % fruit
 
 # also we can go through mixed lists too
