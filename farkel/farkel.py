@@ -8,12 +8,14 @@ import sys
 # author : Denver Peterson
 # last update 10.28.2015
 
+def checkEqual(lst):
+       return lst[1:] == lst[:-1]
+
 def roll(diceleft):
 	myroll = []
 	for x in range(0, diceleft):
 		a = random.randint(1, 6)
 	 	myroll.append(a)
 	return myroll
-
 
 
