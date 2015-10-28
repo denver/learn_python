@@ -33,7 +33,7 @@ def roll():
 		print "Total rolls > %r" % (total_rolls)
 
 # write a test 
-# test_var = [ 1, 1, 1, 1, 1, 1,]
-# print checkEqual(test_var)
+test_var = [ 1, 1, 1, 1, 1, 1,]
+print "Did your test pass? > %r" % (checkEqual(test_var))
 
 roll()
