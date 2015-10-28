@@ -8,10 +8,10 @@ import sys
 # set variable to print at the end, maintain count
 #total_rolls = 0
 # set diceleft
-diceleft = 112
-#blah = []
+diceleft = 6
+#set myroll
+#myroll = []
 
-elements = []
 #a = []
 
 # commented out, easy "hack" of creating first array of six rolls 
@@ -23,17 +23,15 @@ def checkEqual(lst):
 
 # function to roll remaing dice in cup n = 1-6
 def roll():
-	result = []
 	total_rolls = 0
-	#a = []
+	myroll = []
 	for x in range(0, diceleft):
 		total_rolls = total_rolls + 1
-		roll = random.randint(1, 6)
-		print roll
-		#result = result.append(1)
-		#a = a.append(roll)
-		#a = a.append(x)
-		#print a
+		a = random.randint(1, 6)
+		print a
+		b = [random.randint(1, 6),random.randint(1, 6),random.randint(1, 6),random.randint(1, 6),random.randint(1, 6),random.randint(1, 6)]
+		# myroll = myroll.append(a)
+		print b
 		print "Total rolls > %r" % (total_rolls)
 
 # write a test 
@@ -48,4 +46,5 @@ print "Did your test pass? > %r" % (checkEqual(test_var))
 #     elements.append(i)
 
 
-roll()
+#roll()
+
