@@ -1,6 +1,7 @@
 # farkel python simulator
 # Class List for all major first rolls 
 # generate random integers for test purposes
+
 from collections import defaultdict
 import random 
 from urllib import urlopen
@@ -8,80 +9,50 @@ import sys
 from farkel import roll, checkEqual
 
 # create a container dict for current roll
-# current_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
+current_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
 
 # # create a container dict for scored rolls (i.e. to be counted if no farkel and to determine 6-n for next roll )
-# score_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
+score_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
 
-# total_score = 0
-# round_score = 0
+total_score = 0
+round_score = 0
 
-
-# # print "current roll = %s" % (current_roll)
+# print "current roll = %s" % (current_roll)
 
 # print "score roll = %s" % (score_roll)
 
-b = roll(6)
-print b 
-
-# https://docs.python.org/2/tutorial/datastructures.html
+b = roll(2)
 
 a = {1:0,2:0,3:0,4:0,5:0,6:0}
-#b = [2, 2, 5, 5, 5, 3]
-for index in b:
-   a[b[index]] += 1
 
-print a
+# Have analyze why this doesn't work 
+
+# for item in b:
+# 	#a[b[item]] = a[b[item]] + 1
+# 	print item
+# 	#print [b[item]]
+
+# for n in b:
+#    a[b[n]] += 1
+
+print "You rolled %s " % b
+
+for i in range(len(b)):
+	#print a[b[i]] + 1
+	#a[b[i]] = a[b[i]] + 1   # This adds 1 to the 'value' of the 'key' 
+	a[b[i]] += 1
+	#print "the index is %s and the dice value is %s" % (i,b[i])
+	#print b[i]
+	print "adding +1 to %ss column" % b[i]
+	
+	print a
 
 
+# a[b[0]] = a[b[0]] + 1
+# a[b[1]] = a[b[1]] + 1
+# a[b[2]] = a[b[2]] + 1
+# a[b[3]] = a[b[3]] + 1
+# a[b[4]] = a[b[4]] + 1
+# a[b[5]] = a[b[5]] + 1
 
-# >>> a
-# {'1': 0, '2': 0}
-# >>> b
-# [1, 1]
-# >>> a['1']
-# 0
-# >>> b
-# [1, 1]
-# >>> a
-# {'1': 0, '2': 0}
-# >>> a[0] = b[0]
-# >>> a
-# {'1': 0, 0: 1, '2': 0}
-# >>> a = {"1" : 0 , "2" : 0}
-# >>> a
-# {'1': 0, '2': 0}
-# >>> a[0]
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# KeyError: 0
-# >>> a['1'] = b[0]
-# >>> a
-# {'1': 1, '2': 0}
-# >>> a = {"1" : 0 , "2" : 0}
-# >>> b
-# [1, 1]
-# >>> a = {1 : 0 , 2 : 0}
-# >>> a
-# {1: 0, 2: 0}
-# >>> a[b[0]] = a[b[0]] + 1
-# >>> a
-# {1: 1, 2: 0}
-# >>> a[b[1]] = a[b[1]] + 1
-# >>> a
-# {1: 2, 2: 0}
-# >>> ++a[b[0]]
-# 2
-# >>> a
-# {1: 2, 2: 0}
-# >>> a[b[0]] += a[b[0]]
-# >>> a
-# {1: 4, 2: 0}
-# >>> a[b[0]] += a[b[0]]
-# >>> a[b[0]] += 1
-# >>> a
-# {1: 9, 2: 0}
-# >>> a[b[0]] += 1
-# >>> a
-# {1: 10, 2: 0}
-# >>>
+
