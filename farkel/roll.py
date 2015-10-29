@@ -6,4 +6,4 @@ from urllib import urlopen
 import sys
 from farkel import roll, checkEqual
 
-roll()
+roll(6)
