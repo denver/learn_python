@@ -4,10 +4,11 @@ import random
 from urllib import urlopen
 import sys
 from farkel import roll, checkEqual
+import numpy as np
+import matplotlib.pyplot as plt
 
 sixofakinds = 0
 total_rolls = 0
-
 
 while sixofakind == False:
 	total_rolls += 1

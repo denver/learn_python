@@ -11,7 +11,7 @@ total_rolls = 0
 while sixofakind == False:
 	total_rolls += 1
 	a = roll(6)
-	#print a
+	print a
 	sixofakind = checkEqual(a)
 
 print a
