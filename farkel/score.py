@@ -7,6 +7,7 @@ import random
 from urllib import urlopen
 import sys
 from farkel import roll, checkEqual
+from scoreroll import Score
 
 # create a container dict for current roll
 current_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
@@ -21,7 +22,7 @@ round_score = 0
 
 # print "score roll = %s" % (score_roll)
 
-b = roll(2)
+b = roll(6)
 
 a = {1:0,2:0,3:0,4:0,5:0,6:0}
 
@@ -39,20 +40,18 @@ print "You rolled %s " % b
 
 for i in range(len(b)):
 	#print a[b[i]] + 1
-	#a[b[i]] = a[b[i]] + 1   # This adds 1 to the 'value' of the 'key' 
 	a[b[i]] += 1
 	#print "the index is %s and the dice value is %s" % (i,b[i])
 	#print b[i]
 	print "adding +1 to %ss column" % b[i]
 	
-	print a
+	#print a
+
+#print a
 
 
-# a[b[0]] = a[b[0]] + 1
-# a[b[1]] = a[b[1]] + 1
-# a[b[2]] = a[b[2]] + 1
-# a[b[3]] = a[b[3]] + 1
-# a[b[4]] = a[b[4]] + 1
-# a[b[5]] = a[b[5]] + 1
+c = Score(a)
+c.theroll()
+
 
 
