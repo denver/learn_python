@@ -2,9 +2,9 @@
 
 from farkel import roll, checkEqual, sortroll, addscore, roll_dice
 from scorelibrary import scorelib
-from testresults import straight
+from testresults import straight, sixofakind
 
-#result = [1,2,3,4,5,6]
+#result = [1,1,1,1,1,1]
 result = roll(6)
 
 print result 
@@ -15,4 +15,5 @@ print c
 
 #print scorelib['one']
 
-foo = straight(c)
+straight(c)
+sixofakind(c)
