@@ -1,7 +1,6 @@
-# farkel python simulator
 # python farkel game 
 # author : Denver Peterson
-# last update 10.28.2015
+# last update 11.1.2015
 
 import random 
 from urllib import urlopen
@@ -9,8 +8,8 @@ import sys
 from scoreroll import Score
 
 
-def checkEqual(lst):
-       return lst[1:] == lst[:-1]
+def checkEqual(self):
+       return self[1:] == self[:-1]
 
 def roll(diceleft):
 	myroll = []
