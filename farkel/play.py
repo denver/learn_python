@@ -1,21 +1,18 @@
 # play.py
 
-from scoreroll import Score
-# import score
-# from score import roll
+from farkel import roll, checkEqual, sortroll, addscore, roll_dice
+from scorelibrary import scorelib
+from testresults import straight
 
+#result = [1,2,3,4,5,6]
+result = roll(6)
 
-# a = {1:0,2:0,3:0,4:0,5:0,6:6}
-# test = Score(a)
+print result 
 
-# test.theroll()
-# test.straight()
-newroll = roll(6)
-print newroll
-# blah = Score(a)
+c = sortroll(result)
 
-# blah.theroll()
-# blah.sixofakind()
-# blah.straight()
+print c
 
+#print scorelib['one']
 
+foo = straight(c)

@@ -11,9 +11,9 @@ class Score(object):
 		for i in self.roll:
 			print "You rolled %s %ss" % (self.roll[i], i)
 
-	def straight(self):
-		if self.roll == {1:1,2:1,3:1,4:1,5:1,6:1}:
-			print "you rolled a straight!"
+	# def straight(self):
+	# 	if self.roll == {1:1,2:1,3:1,4:1,5:1,6:1}:
+	# 		print "you rolled a straight!"
 
 	def sixofakind(self):
 		if self.roll == {1:0,2:0,3:0,4:0,5:0,6:6}:
@@ -28,12 +28,11 @@ class Score(object):
 	# 		print "six special of a kind"
 
 
-# example = Score({1:0,2:0,3:0,4:0,5:0,6:6})
 
-# example.theroll()
+# print example
+# # example.theroll()
 
 # example.straight()
-
 # example.sixofakind()
 
 

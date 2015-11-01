@@ -29,3 +29,26 @@
 
 # for n in b:
 #    a[b[n]] += 1
+
+
+
+
+# stuff related to running the classes which I broke
+
+# a = roll(6)
+# # a = [1,2,3,4,5,6]
+# # a = {1:0,2:0,3:0,4:0,5:0,6:6}
+# test = Score(a)
+
+# # newroll = roll(6)
+# print a
+
+# # a = sortroll(a)
+# # # blah = Score(a)
+# print test 
+# test.theroll()
+# test.sixofakind()
+# test.straight()
+
+
+# print scorelib['one']

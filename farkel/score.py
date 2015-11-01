@@ -10,10 +10,10 @@ from farkel import roll, checkEqual
 from scoreroll import Score
 
 # create a container dict for current roll
-current_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
+current_roll = {1:0,2:0,3:0,4:0,5:0,6:0}
 
 # # create a container dict for scored rolls (i.e. to be counted if no farkel and to determine 6-n for next roll )
-score_roll = {'1':0,'2':0,'3':0,'4':0,'5':0,'6':0}
+score_roll = {1:0,2:0,3:0,4:0,5:0,6:0}
 
 total_score = 0
 round_score = 0
@@ -43,15 +43,17 @@ for i in range(len(b)):
 	a[b[i]] += 1
 	#print "the index is %s and the dice value is %s" % (i,b[i])
 	#print b[i]
-	print "adding +1 to %ss column" % b[i]
+	#print "adding +1 to %ss column" % b[i]
 	
 	#print a
 
-#print a
+print a
 
 
-c = Score(a)
-c.theroll()
+# c = Score(b)
+# c.theroll()
+
+
 
 
 
