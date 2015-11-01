@@ -30,9 +30,6 @@
 # for n in b:
 #    a[b[n]] += 1
 
-
-
-
 # stuff related to running the classes which I broke
 
 # a = roll(6)
@@ -52,3 +49,17 @@
 
 
 # print scorelib['one']
+
+
+# # first attempt at three pair check 
+
+# def threepairs(self):
+# 	totalpairs = 0
+# 	for k, v in sorted(self.items()):
+# 		if v == 2:
+# 			totalpairs += 1
+# 			# print "you have two %ss" % k
+# 			# print "you rolled %s pairs" % totalpairs
+# 	if totalpairs == 3:
+# 		print "you rolled three pairs"
+# 		print scorelib['threepairs']

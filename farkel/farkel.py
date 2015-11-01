@@ -1,13 +1,13 @@
 # farkel python simulator
+# python farkel game 
+# author : Denver Peterson
+# last update 10.28.2015
 
 import random 
 from urllib import urlopen
 import sys
 from scoreroll import Score
 
-# python farkel game 
-# author : Denver Peterson
-# last update 10.28.2015
 
 def checkEqual(lst):
        return lst[1:] == lst[:-1]
@@ -34,8 +34,8 @@ def addscore(userscore):
 	totalscore = roundscore + totalscore
 	return totalscore
 
-def roll_dice(x):
-	return roll(x)
+def roll_dice(self):
+	return roll(self)
 
 
 
