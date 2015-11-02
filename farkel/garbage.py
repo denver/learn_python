@@ -63,3 +63,31 @@
 # 	if totalpairs == 3:
 # 		print "you rolled three pairs"
 # 		print scorelib['threepairs']
+
+
+
+
+# def fourofakind(self):
+# 	ispair = 0
+# 	for k, v in sorted(self.items()):
+# 		if v == 4:
+# 			for k, v in sorted(self.items()):
+# 				if v ==2:
+# 					ispair +=1
+# 					print "4 of a kind and a pair!"
+
+# 			if ispair == 0:
+# 				print "4 of a kind!"
+# 		# print k,v
+
+# def fourofakind(self):
+# 	for k, v in sorted(self.items()):
+# 		if v == 4:
+# 			for k, v in sorted(self.items()):
+# 				if v !=2:
+# 					#print v
+# 					print "4 of a kind!"
+# 		# print k,v
+
+
+# fourofakind(c)

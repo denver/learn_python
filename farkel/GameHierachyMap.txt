@@ -1,0 +1,4 @@
+Game Hierachy Map
+
+Farkel - A simple dice game. The goal is to get to 10,000 points by rolling a cup of up to six dice. 
+

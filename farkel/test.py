@@ -3,10 +3,10 @@
 
 from farkel import roll, checkEqual, sortroll, addscore, roll_dice
 from scorelibrary import scorelib
-from testresults import straight, sixofakind, fiveofakind, printpairs, fourofakind, threeofakind, threepairs
+from testresults import straight, sixofakind, fiveofakind, fourofakind, printpairs, threeofakind, threepairs
 # from scoreroll import Score
 
-#result = [2,2,1,2,3,4]
+#result = [1,1,1,2,1,2]
 result = roll(6)
 print result 
 
@@ -15,13 +15,10 @@ print c
 
 printpairs(c)
 
-
-
 straight(c)
 sixofakind(c)
 fiveofakind(c)
 fourofakind(c)
 threepairs(c)
 threeofakind(c)
-
 

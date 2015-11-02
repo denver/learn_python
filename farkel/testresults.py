@@ -7,25 +7,34 @@ from scorelibrary import scorelib
 def straight(self):
 	if self == ({1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}):
 		print "A straight!"
-		print "You scored %s" %  (scorelib["straight"])
+		print "You scored %s" % (scorelib["straight"])
 
 def sixofakind(self):
 	for k, v in sorted(self.items()):
 		if v == 6:
 			print "6 of a kind!"
-			print "You scored %s" %  (scorelib["sixofakind"])
+			print "You scored %s" % (scorelib["sixofakind"])
 
 def fiveofakind(self):
 	for k, v in sorted(self.items()):
 		if v == 5:
 			print "5 of a kind!"
+			print "You scored %s" % (scorelib["fiveofakind"])
 		# print k,v
 
 def fourofakind(self):
+	ispair = 0
 	for k, v in sorted(self.items()):
 		if v == 4:
-			print "4 of a kind!"
-		# print k,v
+			for k, v in sorted(self.items()):
+				if v ==2:
+					ispair +=1
+					print "4 of a kind and a pair!"
+					print "You scored %s" % (scorelib["fourofakindpair"])
+
+			if ispair == 0:
+				print "4 of a kind!"
+				print "You scored %s" % (scorelib["fourofakind"])
 
 def threeofakind(self):
 	triples = 0
@@ -38,7 +47,7 @@ def threeofakind(self):
 	# checks if there are two or one set of threes - if two it's a special roll 
 	if triples == 2:
 		print "Two triples"
-		print scorelib['twotriple']
+		print "You scored %s" % (scorelib["twotriple"])
 	elif triples == 1:
 		print "Three %ss" % (triplekey[0])
 		if triplekey[0] == 1:
