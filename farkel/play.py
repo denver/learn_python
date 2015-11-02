@@ -2,7 +2,7 @@
 
 from farkel import roll, checkEqual, sortroll, addscore, roll_dice
 from scorelibrary import scorelib
-from testresults import straight, sixofakind, fiveofakind, printpairs, fourofakind, threeofakind, threepairs
+from testresults import straight, sixofakind, fiveofakind, fourofakind, threeofakind, threepairs, printpairs
 from scoreroll import Score
 
 #result = [1,2,3,4,5,6]
@@ -25,8 +25,8 @@ threepairs(c)
 
 
 
-# somevar = Score(c)
-# somevar.theroll()
+somevar = Score(c)
+somevar.theroll()
 
 
 
