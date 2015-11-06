@@ -2,10 +2,13 @@
 
 # Create Class to Score the Roll of the Dice 
 
+from scorelibrary import scorelib
+
 class Score(object):
 	
 	def __init__(self, roll):
 		self.roll = roll
+
 
 	def theroll(self):
 		print self.roll
@@ -18,8 +21,8 @@ class Score(object):
 			print "You scored %s" % (scorelib["straight"])
 
 	def sixofakind(self):
-		for k, v in sorted(self.items()):
-			if v == 6:
+		for i in self.roll:
+			if self.roll[i] == 6:
 				print "6 of a kind!"
 				print "You scored %s" % (scorelib["sixofakind"])
 

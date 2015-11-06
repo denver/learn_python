@@ -23,7 +23,7 @@ print c
 # threeofakind(c)
 
 somevar = Score(c)
-print somevar 
+# print somevar 
 
 # somevar.straight()
 # somevar.sixofakind()

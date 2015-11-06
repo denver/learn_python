@@ -9,7 +9,7 @@ sixofakinds = 0
 total_rolls = 0
 sixofakind = False
 
-for x in range (0, 100000):
+for x in range (0, 1000000):
 	total_rolls += 1
 	a = roll(6)
 	#print a
