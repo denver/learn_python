@@ -25,7 +25,7 @@ c = sortroll(result)
 
 
 
-somevar = Score(c)
+somevar = Score(6)
 
 somevar.theroll()
 somevar.sixofakind()
