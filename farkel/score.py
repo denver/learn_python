@@ -1,59 +1,77 @@
-# farkel python simulator
-# Class List for all major first rolls 
-# generate random integers for test purposes
+# score.py
 
-from collections import defaultdict
-import random 
-from urllib import urlopen
-import sys
-from farkel import roll, checkEqual
-from scoreroll import Score
+from scorelibrary import scorelib
+from roll import Roll
+from turn import Turn
 
-# create a container dict for current roll
-current_roll = {1:0,2:0,3:0,4:0,5:0,6:0}
-
-# # create a container dict for scored rolls (i.e. to be counted if no farkel and to determine 6-n for next roll )
-score_roll = {1:0,2:0,3:0,4:0,5:0,6:0}
-
-total_score = 0
-round_score = 0
-
-# print "current roll = %s" % (current_roll)
-
-# print "score roll = %s" % (score_roll)
-
-b = roll(6)
-
-a = {1:0,2:0,3:0,4:0,5:0,6:0}
-
-# Have analyze why this doesn't work 
-
-# for item in b:
-# 	#a[b[item]] = a[b[item]] + 1
-# 	print item
-# 	#print [b[item]]
-
-# for n in b:
-#    a[b[n]] += 1
-
-print "You rolled %s " % b
-
-for i in range(len(b)):
-	#print a[b[i]] + 1
-	a[b[i]] += 1
-	#print "the index is %s and the dice value is %s" % (i,b[i])
-	#print b[i]
-	#print "adding +1 to %ss column" % b[i]
+class Score(object):
 	
-	#print a
+	def __init__(self, roll):
+		self.roll = roll
 
-print a
+	def straight(self):
+		if self.roll == ({1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}):
+			print "A straight!"
+			print "You scored %s" % (scorelib["straight"])
 
+	def sixofakind(self):
+		for i in self.roll:
+			if self.roll[i] == 6:
+				print "6 of a kind!"
+				print "You scored %s" % (scorelib["sixofakind"])
 
-# c = Score(b)
-# c.theroll()
+	def fiveofakind(self):
+		for i in self.roll:
+			if self.roll[i] == 5:
+				print "5 of a kind!"
+				print "You scored %s" % (scorelib["fiveofakind"])
 
+	def fourofakind(self):
+		ispair = 0
+		for k, v in sorted(self.roll.items()):
+			if v == 4:
+				for k, v in sorted(self.roll.items()):
+					if v ==2:
+						ispair +=1
+						print "4 of a kind and a pair!"
+						print "You scored %s" % (scorelib["fourofakindpair"])
 
+				if ispair == 0:
+					print "4 of a kind!"
+					print "You scored %s" % (scorelib["fourofakind"])
 
+	def threeofakind(self):
+		triples = 0
+		triplekey = []
+		for k, v in sorted(self.roll.items()):
+			if v == 3:
+				triples += 1
+				triplekey.append(k)
 
+		# checks if there are two or one set of threes - if two it's a special roll 
+		if triples == 2:
+			print "Two triples"
+			print "You scored %s" % (scorelib["twotriple"])
+		elif triples == 1:
+			print "Three %ss" % (triplekey[0])
+			if triplekey[0] == 1:
+				print "You scored 300"
+			else:
+				print "You scored %s" % (triplekey[0] * 100)
+
+	def threepairs(self):
+		totalpairs = 0
+		for k, v in sorted(self.roll.items()):
+			if v == 2:
+				totalpairs += 1
+		if totalpairs == 3:
+			print "Three pairs"
+			print scorelib['threepairs']
+
+	def theroll(self):
+		print self.roll
+		for i in self.roll:
+			print "You rolled %s %ss" % (self.roll[i], i)
+
+	
 
