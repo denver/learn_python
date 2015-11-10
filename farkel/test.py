@@ -1,17 +1,20 @@
 # test.py
 # this test file to test creating logic for 
-
-from farkel import roll, checkEqual, sortroll, addscore, roll_dice
+#import random 
+# from farkel import roll, checkEqual, sortroll, addscore, roll_dice
 from scorelibrary import scorelib
 #from testresults import straight, sixofakind, fiveofakind, fourofakind, printpairs, threeofakind, threepairs
-from scoreroll import Score
+# from scoreroll import Score
+from roll import Roll
+from turn import Turn
+from score import Score 
 
-#result = [1,1,1,2,1,2]
-result = roll(6)
-print result 
+# #result = [1,1,1,2,1,2]
+# result = roll(6)
+# print result 
 
-c = sortroll(result)
-print c
+# c = sortroll(result)
+# print c
 
 # printpairs(c)
 
@@ -22,7 +25,7 @@ print c
 # threepairs(c)
 # threeofakind(c)
 
-somevar = Score(c)
+# somevar = Score(c)
 # print somevar 
 
 # somevar.straight()
@@ -32,5 +35,25 @@ somevar = Score(c)
 # somevar.threeofakind()
 # somevar.threepairs()
 # somevar.printpairs()
-somevar.theroll()
+# somevar.theroll()
+print "Who's player one?"
+player = raw_input()
+n = 6
+
+# somevar2 = somevar.sortroll()
+# print somevar2
+
+x = Turn(player)
+
+x.turn()
+
+
+# result = Roll(6)
+ 
+# somevar = result.roll()
+# somevar.printpairs()
+# #print somevar
+
+# c = somevar
+
 

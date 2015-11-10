@@ -1,16 +1,16 @@
 # play.py
 
-from farkel import roll, checkEqual, sortroll, addscore, roll_dice
+# from farkel import roll, checkEqual, sortroll, addscore, roll_dice
 from scorelibrary import scorelib
-from testresults import straight, sixofakind, fiveofakind, fourofakind, threeofakind, threepairs, printpairs
+# from testresults import straight, sixofakind, fiveofakind, fourofakind, threeofakind, threepairs, printpairs
 from scoreroll import Score
 
 result = [1,1,1,1,1,1]
 #result = roll(6)
 
-print result 
+# print result 
 
-c = sortroll(result)
+# c = sortroll(result)
 
 # print c
 
@@ -25,7 +25,7 @@ c = sortroll(result)
 
 
 
-somevar = Score(c)
+somevar = Score(6)
 
 somevar.theroll()
 somevar.sixofakind()
