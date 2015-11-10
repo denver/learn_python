@@ -9,7 +9,6 @@ class Score(object):
 	def __init__(self, roll):
 		self.roll = roll
 
-
 	def theroll(self):
 		print self.roll
 		for i in self.roll:

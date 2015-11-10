@@ -5,7 +5,7 @@ class Round(object):
     def enter(self):
         pass
 
-class Engine(object):
+class Roll(object):
 
     def __init__(self, roll):
         pass
@@ -22,3 +22,4 @@ class BankScore(Round):
 
     def enter(self):
         pass
+
