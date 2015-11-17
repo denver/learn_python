@@ -9,14 +9,21 @@ class Turn(object):
 		self.player = player
 
 	def turn(self):
-		rollagain = False
-		print "It's %ss turn" % self.player
-		print "%s rolled:" % self.player 
-		a = Roll(6)
-		b = a.roll()
-		print b
-		#b.theroll()
-		#print b
+		while True:
+			n = raw_input("Please enter 'hello':")
+    		if n.strip() == 'hello':
+    		
+    			break
+
+		# rollagain = False
+		# print "It's %ss turn" % self.player
+		# print "%s rolled:" % self.player 
+		# a = Roll(6)
+		# b = a.roll()
+		# print b
+		# #b.theroll()
+		# #print b
+
 
 
 

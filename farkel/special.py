@@ -10,11 +10,12 @@ import sys
 # 	def __init__(self, roll):
 # 		self.roll = roll
 
-	def checkspecial(self):
+def checkspecial(self):
+	self.roll = self
 		
-		self.roll.straight()
-		self.roll.sixofakind()
-		self.roll.fiveofakind()
-		self.roll.fourofakind()
-		self.roll.threeofakind()
-		self.roll.threepairs()
+	self.roll.straight()
+	self.roll.sixofakind()
+	self.roll.fiveofakind()
+	self.roll.fourofakind()
+	self.roll.threeofakind()
+	self.roll.threepairs()
