@@ -3,20 +3,16 @@
 # last update 11.7.2015
 
 from roll import Roll
-from score import Score
-from turn import Turn
-from special import checkspecial
+#from score import Score
+#from turn import Turn
+# from special import checkspecial
 
-a = "denver"
-b = Turn(a)
-b.turn()
+dice = 6
 
-# dice = 6
-
-# a = Roll(dice)
-# b = a.roll()
+a = Roll(dice)
+b = a.roll()
 # c = Score(b)
-
+print b 
 # c.theroll()
 
 # c.straight()

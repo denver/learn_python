@@ -1,8 +1,8 @@
 # score.py
 
 from scorelibrary import scorelib
-from roll import Roll
-from turn import Turn
+#from roll import Roll
+#from turn import Turn
 
 class Score(object):
 	
