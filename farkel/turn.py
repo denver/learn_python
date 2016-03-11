@@ -9,13 +9,13 @@ class Turn(object):
 		self.player = player
 
 	def turn(self):
-		rollagain = False
+		# rollagain = False
 		print "It's %ss turn" % self.player
 		print "%s rolled:" % self.player 
-		a = Roll(6)
-		b = a.roll()
-		print b
-		#b.theroll()
+		# a = Roll(6)
+		# b = a.roll()
+		# print b
+		# #b.theroll()
 		#print b
 
 

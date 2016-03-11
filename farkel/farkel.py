@@ -6,24 +6,26 @@ from roll import Roll
 from score import Score
 from turn import Turn
 
-# a = "denver"
-# b = Turn(a)
-# b.turn()
+playername = raw_input("whats players name")
+b = Turn(playername)
+b.turn()
 
-dice = 6
+# dice = 6
 
-a = Roll(dice)
-b = a.roll()
-c = Score(b)
+# a = Roll(dice)
+# b = a.roll()
+# c = Score(b)
 
-c.theroll()
+# c.theroll()
 
-c.straight()
-c.sixofakind()
-c.fiveofakind()
-c.fourofakind()
-c.threeofakind()
-c.threepairs()
+# c.straight()
+# c.sixofakind()
+# c.fiveofakind()
+# c.fourofakind()
+# c.threeofakind()
+# c.threepairs()
+
+
 
 
 

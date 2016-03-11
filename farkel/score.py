@@ -19,6 +19,8 @@ class Score(object):
 			if self.roll[i] == 6:
 				print "6 of a kind!"
 				print "You scored %s" % (scorelib["sixofakind"])
+				# roundscore += scorelib["sixofakind"]
+				return 
 
 	def fiveofakind(self):
 		for i in self.roll:
