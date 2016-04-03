@@ -15,9 +15,3 @@ def players():
 
 players()
 
-
-
-try:
-   val = int(userInput)
-except ValueError:
-   print("That's not an int!")
