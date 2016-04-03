@@ -1,25 +1,27 @@
 # newgame.py
 
+import sys
+import random
+
 class Round(object):
 
     def enter(self):
         pass
 
 class Roll(object):
-
+    """A class to roll the dice"""
     def __init__(self, roll):
-        pass
+        
 
-    def play(self):
-        pass
-
-class Farkel(Round):
+class Farkel(object):
 
     def enter(self):
         pass
 
-class BankScore(Round):
+class Score(object):
 
     def enter(self):
         pass
+
+
 
